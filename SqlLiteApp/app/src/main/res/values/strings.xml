@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Registration Form</string>
+    <string name="hint">Type here</string>
+    <string name="clear">Clear</string>
+    <string name="Submit">Save</string>
+    <string name="showDB">Display DB</string>
+    <string name="DeleteDB">Delete DB</string>
+</resources>

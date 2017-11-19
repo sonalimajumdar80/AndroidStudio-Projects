@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp"
+    tools:context="com.example.sonali.sqlliteapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USN: "
+
+        android:id="@+id/usn"
+
+        android:layout_below="@+id/name"
+        android:paddingTop="20dp"
+
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mail ID: "
+        android:id="@+id/mail"
+        android:layout_below="@+id/usn"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+
+         />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etmail"
+        android:hint="@string/hint"
+        android:layout_alignBaseline="@+id/mail"
+        android:layout_alignBottom="@+id/mail"
+        android:layout_toEndOf="@+id/mail"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:id="@+id/name"
+
+
+         />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="20dp"
+
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        ></ListView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etname"
+       android:hint="@string/hint"
+
+
+        android:layout_alignBaseline="@+id/usn"
+        android:layout_alignBottom="@+id/usn"
+        android:layout_alignStart="@+id/etmail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etusn"
+        android:hint="@string/hint"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignStart="@+id/etname" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Submit"
+        android:layout_marginTop="43dp"
+        android:id="@+id/btnsubmit"
+        android:layout_below="@+id/mail"
+        android:layout_toEndOf="@+id/mail" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:id="@+id/btnclr"
+        android:layout_alignBaseline="@+id/btnsubmit"
+        android:layout_alignBottom="@+id/btnsubmit"
+        android:layout_toEndOf="@+id/etmail"
+        android:layout_marginStart="51dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/showDB"
+        android:layout_marginTop="31dp"
+        android:id="@+id/btnshow"
+        android:layout_below="@+id/btnsubmit"
+        android:layout_alignStart="@+id/btnsubmit" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DeleteDB"
+        android:id="@+id/btndlt"
+        android:layout_alignBaseline="@+id/btnshow"
+        android:layout_alignBottom="@+id/btnshow"
+        android:layout_alignStart="@+id/btnclr" />
+
+
+</RelativeLayout>
